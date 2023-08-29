@@ -1,0 +1,11 @@
+<fieldset [formGroup]="form" class="container">
+    <label>
+        <span>Name</span>
+        <input type="text" formControlName="name">
+    </label>
+
+    <label>
+        <span>Address</span>
+        <app-address-sub-form formControlName="address"></app-address-sub-form>
+    </label>
+</fieldset>

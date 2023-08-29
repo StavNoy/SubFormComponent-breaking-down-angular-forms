@@ -1,0 +1,24 @@
+<form [formGroup]="form">
+    <label>
+        <span>Contact details</span>
+        <app-contact-details-form formControlName="contactDetails"></app-contact-details-form>
+    </label>
+
+    <label>
+        <span>Emergency Contact</span>
+        <app-contact-details-form formControlName="emergencyContact"></app-contact-details-form>
+    </label>
+</form>
+
+
+<h2>Result:</h2>
+<dl>
+    <dt>Status:</dt>
+    <dd><pre>{{ form.status | json }}</pre></dd>
+
+    <dt>Value</dt>
+    <dd>
+        <pre>{{ form.value | json }}</pre>
+    </dd>
+
+</dl>

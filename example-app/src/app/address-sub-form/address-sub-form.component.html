@@ -1,0 +1,14 @@
+<div [formGroup]="form" class="container">
+    <label>
+        <span>City</span>
+
+        <select formControlName="city">
+            <option *ngFor="let city of City | keyvalue" [value]="city.value">{{ city.key }}</option>
+        </select>
+    </label>
+
+    <label>
+        <span>Street</span>
+        <input formControlName="street">
+    </label>
+</div>
